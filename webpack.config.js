@@ -45,6 +45,10 @@ const config = {
           from: path.resolve(sourceDir, 'style.css'),
           to: path.resolve(buildDir, 'style.css')
         },
+        {
+          from: path.resolve(sourceDir, 'link.html'),
+          to: path.resolve(buildDir, 'link.html')
+        },
       ],
     }),
     new HtmlWebpackPlugin({

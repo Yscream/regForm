@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>tic-tac-toe</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="./favicon.ico">
-  <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registartion</title>
 </head>
-
 <body>
-  <div id="app">
-    <div class="won-title hidden">
-      <span class="won-message"></span>
-      <button class="restart-btn btn">Restart game</button>
-    </div>
-    <div class="field"></div>
-    <button disabled class="undo-btn btn">Undo</button>
-    <button disabled class="redo-btn btn">Redo</button>
-  </div>
+    <main>
+        <div class="reg-form">
+            <div class="title">
+                <h1 class="style-title">Регистрация</h1>
+            </div>
+            <div class="components">
+                <div class="style-comps">
+                    <input class = 'name'class = 'email' type="text" placeholder="Имя">
+                    <div id = 'error1' class="error"></div>
+                </div>
+                <div class="style-comps">
+                    <input class = 'lastName' type="text" placeholder="Фамилия">
+                    <div id = 'error2' class="error"></div>
+                </div>
+                <div class="style-comps">
+                    <input class = 'email' type="email" placeholder="Почта">
+                    <div id = 'error3' class="error"></div>
+                </div>
+                <div class="style-comps">
+                    <input class = 'password' type="password" placeholder="Пароль">
+                    <div id = 'error4' class="error"></div>
+                </div>
+            </div>
+            <div class="form-buttton">
+                <button class ="button">Зарегистрироваться</button>
+            </div>
+        </div> 
+    </main>
+    
+<script src="index.js"></script>
 </body>
-
 </html>
